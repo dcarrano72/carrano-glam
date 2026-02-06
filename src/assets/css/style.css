@@ -60,19 +60,19 @@ h1, h2, h3, h4, h5, h6 {
 -------------------------------*/
 :root {
   /* Core Backgrounds */
-  --color-bg-main: #dd6ee2;
-  --color-bg-surface: #bf96a9;
+  --color-bg-main: #d4b1b4;
+  --color-bg-surface: #d8a0a7;
 
   /* Brand Gradient */
-  --color-gradient-start: #f8e8f7;
-  --color-gradient-end: #af8a9a;
+  --color-gradient-start: #F3D5D8;
+  --color-gradient-end: #dba7ab;
 
   /* Text */
   --color-text-main: #000000;
   --color-text-muted: #dcdbdb;
 
   /* Accent */
-  --color-accent: #bf9daf;
+  --color-accent: #c0a3a6;
   --color-accent-soft: rgba(124,255,0,0.25);
 
   /* Header / Footer */
@@ -186,15 +186,15 @@ section {
   font-weight: 600;
   font-size: 2rem;
   color: var(--color-footer-bg);
-  background: #bc859c;
-  background: linear-gradient(180deg, rgb(208, 157, 182) 7%, rgb(128, 44, 89) 100%);
+  background: #e8a5ac;
+  background: linear-gradient(180deg, #dfaaaf, #ed9ea6);
   padding: 20px 40px;
   border-radius: 10px;
   filter: drop-shadow(2px 5px 4px #000000);
 }
 .cta1:hover {
   background: #99CC33;
-  background: linear-gradient(180deg, rgb(135, 74, 96) 7%, rgb(209, 132, 161) 100%);
+  background: linear-gradient(180deg, #d99ca3, #eabcc0);
   text-decoration: none;
 }
 
