@@ -505,6 +505,29 @@ section {
   padding-bottom: 40px;
 }
 
+.home-services .col img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.home-services .col {
+  background-color: transparent;
+  text-align: center;
+}
+
+.home-services .col h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.home-services .col p {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
 .home-services h2,
 .home-gallery h2 {
   text-align: center;
