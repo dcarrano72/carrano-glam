@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
   --color-gradient-end: #000000;
 
   /* Text */
-  --color-text-main: #d4b1b4;
+  --color-text-main: #e6a2a9;
   --color-text-muted: #dcdbdb;
 
   /* Accent */
-  --color-accent: #c0a3a6;
+  --color-accent: #eba8af;
   --color-accent-soft: rgba(124,255,0,0.25);
 
   /* Header / Footer */
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   --color-footer-bg: #000000;
 
   /* Lines / UI */
-  --color-border: rgba(113, 28, 135, 0.555);
+  --color-border: rgb(241, 129, 172);
 }
 
 /* -----------------------------
@@ -184,16 +184,16 @@ section {
 .cta1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: var(--color-footer-bg);
   background: #e8a5ac;
-  background: linear-gradient(180deg, #dfaaaf, #ed9ea6);
+  background: linear-gradient(180deg, #dfaaaf, #cc7f86);
   padding: 20px 40px;
   border-radius: 10px;
   filter: drop-shadow(2px 5px 4px #000000);
 }
 .cta1:hover {
-  background: #99CC33;
+  background: var(--color-accent);
   background: linear-gradient(180deg, #d99ca3, #eabcc0);
   text-decoration: none;
 }
@@ -468,7 +468,7 @@ section {
 
 .home-hero {
   padding-top: 20px;
-  background-image: url("/assets/images/hero-placeholder.jpg");
+  background-image: url("/assets/images/pink-swoosh.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
