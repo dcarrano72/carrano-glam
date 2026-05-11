@@ -468,12 +468,15 @@ section {
 
 .home-hero {
   padding-top: 20px;
+  background-image: url("/assets/images/hero-placeholder.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  min-height: 560px;
+  display: flex;
   align-items: center;
 }
 
@@ -481,10 +484,13 @@ section {
   color: #ed9ea6;
 }
 
-.hero-image-wrap img,
 .home-about img {
   border: 1px solid var(--color-border);
   width: 100%;
+}
+
+.hero-copy {
+  max-width: 520px;
 }
 
 .home-services h2,
@@ -624,9 +630,24 @@ section {
     gap: 30px;
   }
 
-  .hero-inner,
   .gallery-row {
     grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    min-height: 0;
+    background-size: cover;
+    background-position: center right;
+  }
+
+  .hero-inner {
+    min-height: 440px;
+    justify-content: center;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    text-align: center;
   }
 
   .cta-band-inner {
