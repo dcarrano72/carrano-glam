@@ -249,7 +249,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   transition: color 0.25s ease;
-  border-bottom: 2px solid transparent;
+  border-bottom: 6px solid transparent;
   padding-bottom: 3px;
 }
 
@@ -484,13 +484,21 @@ section {
   color: #ed9ea6;
 }
 
-.home-about img {
-  border: 1px solid var(--color-border);
-  width: 100%;
+.home-about {
+  background-image: url("/assets/images/carrano-glam-make-up-case-with-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .hero-copy {
   max-width: 520px;
+}
+
+.home-services {
+  border-top: 1px solid var(--color-border);
 }
 
 .home-services h2,
