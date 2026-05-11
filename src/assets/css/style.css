@@ -249,10 +249,13 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   transition: color 0.25s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
 }
 
 .main-nav a:hover {
   color: var(--color-text-main);
+  border-bottom-color: var(--color-text-main);
 }
 
 /* PHONE */
@@ -262,6 +265,10 @@ section {
   font-size: 1rem;
   white-space: nowrap;
   transition: color 0.25s ease;
+}
+
+.phone-icon {
+  color: #ed9ea6;
 }
 
 .header-phone a:hover {
@@ -444,6 +451,115 @@ section {
     min-height: 600px;
 }
 
+/* -----------------------------
+   Home Page Sections
+------------------------------*/
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.section-button-row {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-hero {
+  padding-top: 20px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.script-accent {
+  color: #ed9ea6;
+}
+
+.hero-image-wrap img,
+.home-about img {
+  border: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.home-services h2,
+.home-gallery h2 {
+  text-align: center;
+}
+
+.home-services .section-kicker,
+.home-gallery .section-kicker {
+  text-align: center;
+}
+
+.home-services.section-four-column .section-inner-container p {
+  margin-bottom: 16px;
+}
+
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.gallery-row img {
+  border: 1px solid var(--color-border);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.home-cta-band {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cta-band-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* -----------------------------
+   Book Now Page
+------------------------------*/
+.book-now-form {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.book-now-form label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.book-now-form input,
+.book-now-form select,
+.book-now-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  background: #111;
+  color: var(--color-text-main);
+  font-family: "Montserrat", sans-serif;
+}
+
+.book-now-form .cta1 {
+  font-size: 1rem;
+  padding: 12px 28px;
+}
+
+.hidden-field {
+  display: none;
+}
+
 
 
 
@@ -453,7 +569,7 @@ section {
 /* Footer styles */
 .site-footer {
     background: var(--color-footer-bg);
-    color: var(--color-text-muted); /* slightly dimmer than body text */
+    color: var(--color-text-main); /* slightly dimmer than body text */
     text-align: left;
     padding: 40px 20px;
     font-size: 0.9rem;
@@ -484,12 +600,12 @@ section {
 }
 
 .footer-nav a {
-  color: var(--color-text-muted);
+  color: var(--color-text-main);
   text-decoration: none;
 }
 
 .footer-nav a:hover {
-  color: var(--color-text-main);
+  color: var(--color-text-muted);
 }
 
 .footer-bottom {
@@ -497,7 +613,7 @@ section {
   padding-top: 20px;
   border-top: 1px solid #333;
   margin-top: 30px;
-  color: var(--color-text-muted);
+  color: var(--color-text-main);
   font-size: 0.9rem;
 }
 
@@ -506,5 +622,15 @@ section {
     flex-direction: column;
     text-align: center;
     gap: 30px;
+  }
+
+  .hero-inner,
+  .gallery-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-band-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

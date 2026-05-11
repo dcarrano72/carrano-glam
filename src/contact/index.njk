@@ -1,6 +1,53 @@
 ---
 layout: layouts/base.njk
-title: About
-description: Learn about Mantis Digital Media in Shelton, CT.
+title: Book Now
+description: Book your Carrano Glam makeup appointment.
 ---
-<h1>Contact</h1>
+<!-- ================================
+SECTION — BOOK NOW INTRO
+================================ -->
+<section class="section-one-column">
+  <div class="section-inner-container">
+    <h1>Book Now</h1>
+    <p>Fill out the form below and we will follow up to confirm your Carrano Glam appointment.</p>
+  </div>
+</section>
+
+<!-- ================================
+SECTION — BOOK NOW FORM
+================================ -->
+<section class="book-now-form-section">
+  <div class="section-inner-container">
+    <form name="book-now" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="book-now-form">
+      <input type="hidden" name="form-name" value="book-now">
+      <p class="hidden-field">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="eventType">What kind of event are you booking for?</label>
+      <select id="eventType" name="eventType" required>
+        <option value="">Select an option</option>
+        <option value="Prom">Prom</option>
+        <option value="Wedding">Wedding</option>
+        <option value="Gala">Gala</option>
+        <option value="Dance">Dance</option>
+        <option value="Party">Party</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="6"></textarea>
+
+      <p><button type="submit" class="cta1">Send</button></p>
+    </form>
+  </div>
+</section>
