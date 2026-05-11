@@ -60,15 +60,15 @@ h1, h2, h3, h4, h5, h6 {
 -------------------------------*/
 :root {
   /* Core Backgrounds */
-  --color-bg-main: #d4b1b4;
+  --color-bg-main: #000000;
   --color-bg-surface: #d8a0a7;
 
   /* Brand Gradient */
-  --color-gradient-start: #F3D5D8;
-  --color-gradient-end: #dba7ab;
+  --color-gradient-start: #000000;
+  --color-gradient-end: #000000;
 
   /* Text */
-  --color-text-main: #000000;
+  --color-text-main: #d4b1b4;
   --color-text-muted: #dcdbdb;
 
   /* Accent */
@@ -76,8 +76,8 @@ h1, h2, h3, h4, h5, h6 {
   --color-accent-soft: rgba(124,255,0,0.25);
 
   /* Header / Footer */
-  --color-header-bg: #060009;
-  --color-footer-bg: #060009;
+  --color-header-bg: #000000;
+  --color-footer-bg: #000000;
 
   /* Lines / UI */
   --color-border: rgba(113, 28, 135, 0.555);
@@ -244,7 +244,7 @@ section {
 }
 
 .main-nav a {
-  color: var(--color-gradient-end);
+  color: var(--color-text-main);
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -252,12 +252,12 @@ section {
 }
 
 .main-nav a:hover {
-  color: var(--color-gradient-start);
+  color: var(--color-text-main);
 }
 
 /* PHONE */
 .header-phone a {
-  color: var(--color-gradient-end);
+  color: var(--color-text-main);
   font-weight: 600;
   font-size: 1rem;
   white-space: nowrap;
