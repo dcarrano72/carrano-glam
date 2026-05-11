@@ -503,6 +503,20 @@ section {
   background-position: center right;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+  padding-top: 40px;
+}
+
+@media (max-width: 800px) {
+
+  .home-about {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 140px;
+    background-position: bottom right;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
 }
 
 .hero-copy {
