@@ -530,6 +530,10 @@ section {
 .home-cta-band {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+  background-image: url("/assets/images/bottom-section-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cta-band-inner {
