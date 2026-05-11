@@ -518,7 +518,18 @@ section {
 
 .home-about h2 {
   color: var(--color-text-muted);
+  position: relative;
+  z-index: 100;
 }
+/*.home-about h2.heart-icon {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  z-index: 200;
+}*/
 
 .home-about p {
   color: var(--color-text-muted);
@@ -545,6 +556,10 @@ section {
   border-top: 1px solid var(--color-border);
   padding-bottom: 40px;
   padding-top: 40px;
+}
+
+.home-services h2 {
+  color: var(--color-text-muted);
 }
 
 .home-services .col img {
