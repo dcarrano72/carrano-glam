@@ -191,11 +191,20 @@ section {
   padding: 20px 40px;
   border-radius: 10px;
   filter: drop-shadow(2px 5px 4px #000000);
+  display: inline-block;
+  white-space: nowrap;
 }
 .cta1:hover {
   background: var(--color-accent);
   background: linear-gradient(180deg, #d99ca3, #eabcc0);
   text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .cta1 {
+    font-size: 1rem;
+    padding: 16px 22px;
+  }
 }
 
 /* -----------------------------
