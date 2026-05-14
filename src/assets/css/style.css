@@ -638,7 +638,7 @@ section {
 ------------------------------*/
 .book-now-form {
   display: grid;
-  gap: 12px;
+  gap: 0;
   max-width: 760px;
   margin: 0 auto;
 }
@@ -646,9 +646,10 @@ section {
 .book-now-form label {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  margin-bottom: 8px;
 }
 
-.book-now-form input,
+.book-now-form input:not([type="hidden"]),
 .book-now-form select,
 .book-now-form textarea {
   width: 100%;
@@ -657,6 +658,7 @@ section {
   background: #111;
   color: var(--color-text-main);
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
 }
 
 .book-now-form .cta1 {
