@@ -745,7 +745,7 @@ section {
   .home-hero {
     min-height: 0;
     background-size: cover;
-    background-position: bottom right;
+    background-position: right 100px;
   }
 
   .hero-inner {
