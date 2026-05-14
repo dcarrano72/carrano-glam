@@ -536,6 +536,13 @@ section {
 }
 
 @media (max-width: 800px) {
+  .home-hero {
+    
+    
+    background-position: bottom center;
+    background-size: cover;
+    
+  }
 
   .home-about {
     background-size: contain;
