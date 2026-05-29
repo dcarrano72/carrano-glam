@@ -178,6 +178,16 @@ section {
 
 }
 
+
+
+
+
+
+
+
+
+
+
 /* -------------------------
    Buttons
 ---------------------------*/
@@ -425,7 +435,7 @@ section {
     left: 0;
     top: 124px;
     width: 100vw;
-    padding-left: 5vw;
+    padding-left: 0;
     height: 300px;
     background-color: var(--color-footer-bg);
   }
@@ -633,6 +643,175 @@ section {
   gap: 20px;
 }
 
+
+
+/* -----------------------------
+    About Page
+--------------------------------*/
+
+/* ABOUT PAGE */
+
+.about-page {
+  background:
+    radial-gradient(circle at top left, rgba(243,182,200,0.18), transparent 35%),
+    #050505;
+  color: #ffffff;
+  padding: 90px 20px 70px;
+}
+
+.about-page .section-inner-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-page .section-tag {
+  color: #f3b6c8;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.about-page h1 {
+  color: #f7c1d2;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: 1.05;
+  margin: 20px 0 28px;
+}
+
+.about-page p {
+  color: #f5e6ec;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+.about-values {
+  background: #0b0b0b;
+  color: #ffffff;
+  padding: 70px 20px 100px;
+}
+
+.about-values .section-inner-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-values .section-tag {
+  color: #f3b6c8;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.about-values h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  margin: 18px 0 36px;
+}
+
+.about-values .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.about-values .service-card {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .about-values .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 26px;
+  }
+}
+
+
+
+
+
+/* -----------------------------
+   Services Page 
+--------------------------------*/
+
+/* SERVICES PAGE */
+
+.services-page {
+  background: #050505;
+  color: #ffffff;
+  padding: 90px 20px 60px;
+}
+
+.services-page .section-inner-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-page .section-tag {
+  color: #f3b6c8;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.services-page h1 {
+  color: #f7c1d2;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin: 20px 0;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.services-page .hero-text {
+  color: #f5e6ec;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.services-list .section-inner-container {
+  max-width: 1000px;
+  display: grid;
+  gap: 28px;
+}
+
+.services-list {
+  background:
+    radial-gradient(circle at top right, rgba(243,182,200,0.18), transparent 35%),
+    #050505;
+  padding: 60px 20px 100px;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(243,182,200,0.35);
+  border-radius: 22px;
+  padding: 34px;
+  color: #ffffff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.service-card h2,
+.service-card h3 {
+  color: #f7c1d2;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #f5e6ec;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+
+
+
+
 /* -----------------------------
    Book Now Page
 ------------------------------*/
@@ -671,7 +850,71 @@ section {
 }
 
 
+/* MOBILE NAV - FULL WIDTH STACKED BUTTONS */
 
+@media (max-width: 900px) {
+
+  .main-nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .main-nav li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    padding: 18px 20px;
+    text-align: center;
+
+    border-radius: 0;
+    border: none;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    background: linear-gradient(
+      180deg,
+      rgba(208, 158, 178, 0.85) 0%,
+      rgba(142, 92, 101, 0.85) 55%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  .main-nav a:hover,
+  .main-nav a:focus {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 205, 225, 0.95) 0%,
+      rgba(124, 74, 87, 0.95) 55%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  .main-nav a:active {
+    background: linear-gradient(
+      180deg,
+      rgb(190, 123, 153) 0%,
+      rgba(70, 20, 45, 1) 55%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+}
 
 
 
