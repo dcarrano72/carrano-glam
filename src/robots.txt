@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carranoglam.com/sitemap.xml
