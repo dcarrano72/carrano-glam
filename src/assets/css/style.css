@@ -894,25 +894,18 @@ section {
     border-radius: 0;
     border: none;
     
-    color: #ffffff;
+    font-weight: bold;
     text-decoration: none;
 
-    background: linear-gradient(
-      180deg,
-      rgba(208, 158, 178, 0.85) 0%,
-      rgba(215, 136, 151, 0.85) 55%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    color: var(--color-footer-bg);
+  background: #e8a5ac;
+  background: linear-gradient(180deg, #dfaaaf, #cc7f86);
   }
 
   .main-nav a:hover,
   .main-nav a:focus {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 205, 225, 0.95) 0%,
-      rgba(124, 74, 87, 0.95) 55%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    background: linear-gradient(180deg, #dfaaaf, #98575c);
+  }
   }
 
   .main-nav a:active {
