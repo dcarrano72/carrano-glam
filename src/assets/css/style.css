@@ -906,7 +906,7 @@ section {
   .main-nav a:focus {
     background: linear-gradient(180deg, #dfaaaf, #98575c);
   }
-  }
+  
 
   .main-nav a:active {
     background: linear-gradient(
@@ -918,6 +918,8 @@ section {
   }
 
 }
+
+
 
 
 

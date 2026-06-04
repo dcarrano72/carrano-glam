@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+title: Share Your Experience | Carrano Glam
+description: Tell us about your Carrano Glam experience. Your feedback helps us continue providing beautiful makeup services for weddings, proms, and special events throughout Connecticut.
+---
+
+<section class="section-one-column">
+  <div class="section-inner-container">
+
+    <h1>Share Your Experience</h1>
+
+    <p>
+      Thank you for choosing Carrano Glam. Your feedback helps us continue
+      creating beautiful makeup experiences for weddings, proms, and special
+      events across Connecticut.
+    </p>
+
+  </div>
+</section>
+
+<section class="book-now-form-section">
+  <div class="section-inner-container">
+
+    <form
+      name="share-your-experience"
+      method="POST"
+      data-netlify="true"
+      action="/thank-you-feedback/"
+      netlify-honeypot="bot-field"
+      class="book-now-form"
+    >
+
+      <input type="hidden" name="form-name" value="share-your-experience">
+
+      <p class="hidden-field">
+        <label>
+          Don’t fill this out if you're human:
+          <input name="bot-field">
+        </label>
+      </p>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email">
+
+      <label for="service">What service did you receive?</label>
+      <select id="service" name="service" required>
+        <option value="">Select an option</option>
+        <option value="Bridal Makeup">Bridal Makeup</option>
+        <option value="Prom Makeup">Prom Makeup</option>
+        <option value="Special Event Makeup">Special Event Makeup</option>
+        <option value="Makeup Lesson">Makeup Lesson</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="rating">How was your experience?</label>
+      <select id="rating" name="rating" required>
+        <option value="">Select a rating</option>
+        <option value="5 Stars">5 Stars - Amazing</option>
+        <option value="4 Stars">4 Stars - Great</option>
+        <option value="3 Stars">3 Stars - Good</option>
+        <option value="2 Stars">2 Stars</option>
+        <option value="1 Star">1 Star</option>
+      </select>
+
+      <label for="message">Tell us about your experience</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <label for="permission">May we share your feedback on the website or social media?</label>
+      <select id="permission" name="permission" required>
+        <option value="">Select an option</option>
+        <option value="Yes">Yes</option>
+        <option value="Yes, but use first name only">Yes, but use my first name only</option>
+        <option value="No">No</option>
+      </select>
+
+      <p>
+        <button type="submit" class="cta1">
+          Send Feedback
+        </button>
+      </p>
+
+    </form>
+
+  </div>
+</section>
